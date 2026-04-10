@@ -2,15 +2,19 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Meu Primeiro Site</title>
+    <title>Givanildo | Desenvolvedor</title>
 
     <style>
         body {
-            background-color: #121212;
+            margin: 0;
+            font-family: Arial;
+            background: linear-gradient(to right, #121212, #1e1e1e);
             color: white;
             text-align: center;
-            font-family: Arial;
-            margin-top: 100px;
+        }
+
+        header {
+            padding: 40px;
         }
 
         h1 {
@@ -18,8 +22,14 @@
             font-size: 40px;
         }
 
-        p {
-            font-size: 18px;
+        img {
+            width: 150px;
+            border-radius: 50%;
+            margin-top: 20px;
+        }
+
+        section {
+            margin-top: 40px;
         }
 
         button {
@@ -34,21 +44,47 @@
         button:hover {
             background-color: #00cc6a;
         }
+
+        footer {
+            margin-top: 50px;
+            padding: 20px;
+            font-size: 14px;
+            color: #aaa;
+        }
     </style>
 
 </head>
 <body>
 
-    <h1>Olá, eu sou Henrique 🚀👋</h1>
-    <p>Estou construindo minha carreira em tecnologia 🚀</p>
+    <header>
+        <h1>Olá, eu sou Givanildo 👋</h1>
+        <p>Iniciante em programação | Futuro desenvolvedor 🚀</p>
+        <img src="https://via.placeholder.com/150" alt="Minha foto">
+    </header>
 
-    <button onclick="mostrarMensagem()">
-        Clique aqui
-    </button>
+    <section>
+        <h2>Sobre mim</h2>
+        <p>Estou aprendendo programação e construindo meus primeiros projetos usando HTML, CSS e JavaScript.</p>
+    </section>
+
+    <section>
+        <h2>Projetos</h2>
+        <p>✔ Meu primeiro site (esse aqui)</p>
+        <p>🚧 Em breve: novos projetos</p>
+    </section>
+
+    <section>
+        <h2>Contato</h2>
+        <button onclick="mostrarMensagem()">Falar comigo</button>
+    </section>
+
+    <footer>
+        <p>© 2026 - Givanildo</p>
+    </footer>
 
     <script>
         function mostrarMensagem() {
-            alert("Você está evoluindo muito 🚀");
+            alert("Em breve você poderá entrar em contato comigo! 🚀");
         }
     </script>
 
