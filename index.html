@@ -2,54 +2,73 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Givanildo | Desenvolvedor</title>
+    <title>Givanildo Henrique | Desenvolvedor Front-End</title>
 
     <style>
         body {
             margin: 0;
             font-family: Arial;
-            background: linear-gradient(to right, #121212, #1e1e1e);
+            background: linear-gradient(135deg, #667eea, #764ba2);
             color: white;
             text-align: center;
         }
 
         header {
-            padding: 40px;
+            padding: 50px 20px;
         }
 
         h1 {
-            color: #00ff88;
             font-size: 40px;
+        }
+
+        h2 {
+            margin-top: 40px;
         }
 
         img {
             width: 150px;
             border-radius: 50%;
             margin-top: 20px;
+            border: 3px solid white;
         }
 
         section {
-            margin-top: 40px;
+            margin: 40px 20px;
+        }
+
+        .card {
+            background: rgba(255,255,255,0.1);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 10px auto;
+            max-width: 400px;
+        }
+
+        a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
         }
 
         button {
-            background-color: #00ff88;
+            background-color: #ffcc00;
             border: none;
             padding: 12px 25px;
             cursor: pointer;
             font-size: 16px;
             border-radius: 8px;
+            margin-top: 10px;
         }
 
         button:hover {
-            background-color: #00cc6a;
+            background-color: #ffaa00;
         }
 
         footer {
             margin-top: 50px;
             padding: 20px;
             font-size: 14px;
-            color: #aaa;
+            background: rgba(0,0,0,0.2);
         }
     </style>
 
@@ -57,34 +76,47 @@
 <body>
 
     <header>
-        <h1>Olá, eu sou Givanildo 👋</h1>
-        <p>Iniciante em programação | Futuro desenvolvedor 🚀</p>
-        <img src="https://via.placeholder.com/150" alt="Minha foto">
+        <h1>Olá, eu sou Givanildo Henrique 👋</h1>
+        <p>Desenvolvedor Front-End em formação 🚀</p>
+
+        <img src="https://photos.app.goo.gl/sabbK5L4vQ96eaAV7" alt="Minha foto">
     </header>
 
     <section>
         <h2>Sobre mim</h2>
-        <p>Estou aprendendo programação e construindo meus primeiros projetos usando HTML, CSS e JavaScript.</p>
+        <div class="card">
+            <p>Tenho 26 anos e estou iniciando minha jornada na programação. Meu objetivo é me tornar um desenvolvedor front-end e conquistar minha primeira oportunidade na área de tecnologia.</p>
+        </div>
     </section>
 
     <section>
         <h2>Projetos</h2>
-        <p>✔ Meu primeiro site (esse aqui)</p>
-        <p>🚧 Em breve: novos projetos</p>
+        <div class="card">
+            <p>✔ Meu primeiro site publicado online</p>
+            <p>🚧 Em breve: sistema de tarefas com JavaScript</p>
+        </div>
     </section>
 
     <section>
         <h2>Contato</h2>
-        <button onclick="mostrarMensagem()">Falar comigo</button>
+        <div class="card">
+            <p>
+                <a href="https://instagram.com/gh.henrique" target="_blank">Instagram</a><br><br>
+                <a href="https://www.linkedin.com/in/henrique-ferreira-690a13192" target="_blank">LinkedIn</a><br><br>
+                <a href="https://github.com/Ghhenriquee" target="_blank">GitHub</a>
+            </p>
+
+            <button onclick="mensagem()">Fale comigo</button>
+        </div>
     </section>
 
     <footer>
-        <p>© 2026 - Givanildo</p>
+        <p>© 2026 - Givanildo Henrique</p>
     </footer>
 
     <script>
-        function mostrarMensagem() {
-            alert("Em breve você poderá entrar em contato comigo! 🚀");
+        function mensagem() {
+            alert("Obrigado por visitar meu portfólio! 🚀");
         }
     </script>
 
